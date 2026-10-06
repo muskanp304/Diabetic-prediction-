@@ -1,0 +1,5 @@
+PatientName,Age,Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction
+Sunita Sharma,52,6,185,88,36,195,36.4,0.85
+Pooja Verma,42,3,152,80,30,130,31.2,0.58
+Anita Desai,31,7,103,66,32,0,39.1,0.344
+Priya Patel,28,1,92,70,20,45,22.5,0.25

@@ -1,0 +1,48 @@
+{
+  "original_features": [
+    "Pregnancies",
+    "Glucose",
+    "BloodPressure",
+    "SkinThickness",
+    "Insulin",
+    "BMI",
+    "DiabetesPedigreeFunction",
+    "Age"
+  ],
+  "zero_replaced_columns": [
+    "Glucose",
+    "BloodPressure",
+    "SkinThickness",
+    "Insulin",
+    "BMI"
+  ],
+  "engineered_features": [
+    "Glucose_Risk",
+    "Glucose_High_Borderline",
+    "BMI_Obese",
+    "Age_Risk",
+    "Insulin_Glucose_Ratio",
+    "Glucose_BMI",
+    "Pedigree_Age",
+    "HOMA_IR"
+  ],
+  "all_features": [
+    "Pregnancies",
+    "Glucose",
+    "BloodPressure",
+    "SkinThickness",
+    "Insulin",
+    "BMI",
+    "DiabetesPedigreeFunction",
+    "Age",
+    "Glucose_Risk",
+    "Glucose_High_Borderline",
+    "BMI_Obese",
+    "Age_Risk",
+    "Insulin_Glucose_Ratio",
+    "Glucose_BMI",
+    "Pedigree_Age",
+    "HOMA_IR"
+  ],
+  "target": "Outcome"
+}

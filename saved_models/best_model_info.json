@@ -1,0 +1,341 @@
+{
+  "best_model_name": "Gradient Boosting",
+  "feature_names": [
+    "Pregnancies",
+    "Glucose",
+    "BloodPressure",
+    "SkinThickness",
+    "Insulin",
+    "BMI",
+    "DiabetesPedigreeFunction",
+    "Age",
+    "Glucose_Risk",
+    "Glucose_High_Borderline",
+    "BMI_Obese",
+    "Age_Risk",
+    "Insulin_Glucose_Ratio",
+    "Glucose_BMI",
+    "Pedigree_Age",
+    "HOMA_IR"
+  ],
+  "results": {
+    "Logistic Regression": {
+      "metrics": {
+        "accuracy": 0.7792,
+        "precision": 0.6282,
+        "recall": 0.9074,
+        "specificity": 0.71,
+        "f1_score": 0.7424,
+        "roc_auc": 0.8306,
+        "cv_roc_auc": 0.8623,
+        "composite_score": 0.8027
+      },
+      "best_params": {
+        "C": 0.1,
+        "solver": "liblinear"
+      },
+      "confusion_matrix": {
+        "tn": 71,
+        "fp": 29,
+        "fn": 5,
+        "tp": 49
+      },
+      "feature_importance": {
+        "Pregnancies": 0.058676904941165516,
+        "Glucose": 0.2301408314599977,
+        "BloodPressure": 0.007923283878158448,
+        "SkinThickness": 0.08183640819765371,
+        "Insulin": 0.05605166099932117,
+        "BMI": 0.02118871790845983,
+        "DiabetesPedigreeFunction": 0.0688445619323615,
+        "Age": 0.020249100246023017,
+        "Glucose_Risk": 0.04215759038641961,
+        "Glucose_High_Borderline": 0.0317554710138052,
+        "BMI_Obese": 0.00849971377614492,
+        "Age_Risk": 0.017323304036721405,
+        "Insulin_Glucose_Ratio": 0.18661374432311398,
+        "Glucose_BMI": 0.10007395904492962,
+        "Pedigree_Age": 0.012710796328728095,
+        "HOMA_IR": 0.055953951526996275
+      }
+    },
+    "KNN": {
+      "metrics": {
+        "accuracy": 0.7597,
+        "precision": 0.6076,
+        "recall": 0.8889,
+        "specificity": 0.69,
+        "f1_score": 0.7218,
+        "roc_auc": 0.8689,
+        "cv_roc_auc": 0.9348,
+        "composite_score": 0.8064
+      },
+      "best_params": {
+        "n_neighbors": 9,
+        "weights": "distance"
+      },
+      "confusion_matrix": {
+        "tn": 69,
+        "fp": 31,
+        "fn": 6,
+        "tp": 48
+      },
+      "feature_importance": {}
+    },
+    "Naive Bayes": {
+      "metrics": {
+        "accuracy": 0.7468,
+        "precision": 0.6087,
+        "recall": 0.7778,
+        "specificity": 0.73,
+        "f1_score": 0.6829,
+        "roc_auc": 0.814,
+        "cv_roc_auc": 0.8316,
+        "composite_score": 0.7591
+      },
+      "best_params": {
+        "var_smoothing": 1e-09
+      },
+      "confusion_matrix": {
+        "tn": 73,
+        "fp": 27,
+        "fn": 12,
+        "tp": 42
+      },
+      "feature_importance": {}
+    },
+    "Decision Tree": {
+      "metrics": {
+        "accuracy": 0.8636,
+        "precision": 0.8235,
+        "recall": 0.7778,
+        "specificity": 0.91,
+        "f1_score": 0.8,
+        "roc_auc": 0.9098,
+        "cv_roc_auc": 0.93,
+        "composite_score": 0.8589
+      },
+      "best_params": {
+        "max_depth": 5,
+        "min_samples_leaf": 4,
+        "min_samples_split": 4
+      },
+      "confusion_matrix": {
+        "tn": 91,
+        "fp": 9,
+        "fn": 12,
+        "tp": 42
+      },
+      "feature_importance": {
+        "Pregnancies": 0.0,
+        "Glucose": 0.019345059424985305,
+        "BloodPressure": 0.013473508866730736,
+        "SkinThickness": 0.06586397290679816,
+        "Insulin": 0.696534378606226,
+        "BMI": 0.01785348214404214,
+        "DiabetesPedigreeFunction": 0.009654899838554443,
+        "Age": 0.055163049819125634,
+        "Glucose_Risk": 0.0,
+        "Glucose_High_Borderline": 0.0,
+        "BMI_Obese": 0.0,
+        "Age_Risk": 0.0,
+        "Insulin_Glucose_Ratio": 0.020719435856638362,
+        "Glucose_BMI": 0.04480426579691569,
+        "Pedigree_Age": 0.04981985396356019,
+        "HOMA_IR": 0.006768092776423249
+      }
+    },
+    "Random Forest": {
+      "metrics": {
+        "accuracy": 0.8701,
+        "precision": 0.7931,
+        "recall": 0.8519,
+        "specificity": 0.88,
+        "f1_score": 0.8214,
+        "roc_auc": 0.9431,
+        "cv_roc_auc": 0.9586,
+        "composite_score": 0.8841
+      },
+      "best_params": {
+        "max_depth": 8,
+        "min_samples_leaf": 2,
+        "n_estimators": 250
+      },
+      "confusion_matrix": {
+        "tn": 88,
+        "fp": 12,
+        "fn": 8,
+        "tp": 46
+      },
+      "feature_importance": {
+        "Pregnancies": 0.02000178999860851,
+        "Glucose": 0.04486844662684913,
+        "BloodPressure": 0.029002958054949412,
+        "SkinThickness": 0.08997282846055156,
+        "Insulin": 0.2854809778646387,
+        "BMI": 0.03845875823212834,
+        "DiabetesPedigreeFunction": 0.03415217225970204,
+        "Age": 0.03955716873709468,
+        "Glucose_Risk": 0.005605077394686772,
+        "Glucose_High_Borderline": 0.007799348782329435,
+        "BMI_Obese": 0.0049348448644511295,
+        "Age_Risk": 0.006940839361439208,
+        "Insulin_Glucose_Ratio": 0.07696716064704305,
+        "Glucose_BMI": 0.07733271782239715,
+        "Pedigree_Age": 0.040935213301150006,
+        "HOMA_IR": 0.1979896975919809
+      }
+    },
+    "Gradient Boosting": {
+      "metrics": {
+        "accuracy": 0.8896,
+        "precision": 0.8364,
+        "recall": 0.8519,
+        "specificity": 0.91,
+        "f1_score": 0.844,
+        "roc_auc": 0.9481,
+        "cv_roc_auc": 0.9579,
+        "composite_score": 0.8975
+      },
+      "best_params": {
+        "learning_rate": 0.1,
+        "max_depth": 4,
+        "n_estimators": 140
+      },
+      "confusion_matrix": {
+        "tn": 91,
+        "fp": 9,
+        "fn": 8,
+        "tp": 46
+      },
+      "feature_importance": {
+        "Pregnancies": 0.016021577512620896,
+        "Glucose": 0.021222492808016035,
+        "BloodPressure": 0.026973519807172976,
+        "SkinThickness": 0.06226484800497464,
+        "Insulin": 0.59656873793789,
+        "BMI": 0.02203171964548393,
+        "DiabetesPedigreeFunction": 0.03448461971211723,
+        "Age": 0.048682954246340664,
+        "Glucose_Risk": 3.677741927086219e-05,
+        "Glucose_High_Borderline": 0.0007562050630738343,
+        "BMI_Obese": 0.003633323844032613,
+        "Age_Risk": 0.0003266910218305002,
+        "Insulin_Glucose_Ratio": 0.01993869030702336,
+        "Glucose_BMI": 0.06517412159802705,
+        "Pedigree_Age": 0.0459188592343201,
+        "HOMA_IR": 0.035964861837805374
+      }
+    },
+    "XGBoost": {
+      "metrics": {
+        "accuracy": 0.8766,
+        "precision": 0.8182,
+        "recall": 0.8333,
+        "specificity": 0.9,
+        "f1_score": 0.8257,
+        "roc_auc": 0.9404,
+        "cv_roc_auc": 0.9636,
+        "composite_score": 0.8847
+      },
+      "best_params": {
+        "learning_rate": 0.1,
+        "max_depth": 4,
+        "n_estimators": 120
+      },
+      "confusion_matrix": {
+        "tn": 90,
+        "fp": 10,
+        "fn": 9,
+        "tp": 45
+      },
+      "feature_importance": {
+        "Pregnancies": 0.044196274131536484,
+        "Glucose": 0.04426233097910881,
+        "BloodPressure": 0.051821060478687286,
+        "SkinThickness": 0.07153813540935516,
+        "Insulin": 0.4039563238620758,
+        "BMI": 0.03859895095229149,
+        "DiabetesPedigreeFunction": 0.04729514569044113,
+        "Age": 0.05537572503089905,
+        "Glucose_Risk": 0.0,
+        "Glucose_High_Borderline": 0.02629999816417694,
+        "BMI_Obese": 0.0,
+        "Age_Risk": 0.0,
+        "Insulin_Glucose_Ratio": 0.031003013253211975,
+        "Glucose_BMI": 0.07371307164430618,
+        "Pedigree_Age": 0.04844459891319275,
+        "HOMA_IR": 0.06349535286426544
+      }
+    },
+    "SVM": {
+      "metrics": {
+        "accuracy": 0.8377,
+        "precision": 0.7544,
+        "recall": 0.7963,
+        "specificity": 0.86,
+        "f1_score": 0.7748,
+        "roc_auc": 0.9187,
+        "cv_roc_auc": 0.9189,
+        "composite_score": 0.8493
+      },
+      "best_params": {
+        "C": 2.0,
+        "gamma": "scale",
+        "kernel": "rbf"
+      },
+      "confusion_matrix": {
+        "tn": 86,
+        "fp": 14,
+        "fn": 11,
+        "tp": 43
+      },
+      "feature_importance": {}
+    },
+    "Voting Ensemble": {
+      "metrics": {
+        "accuracy": 0.8831,
+        "precision": 0.8214,
+        "recall": 0.8519,
+        "specificity": 0.9,
+        "f1_score": 0.8364,
+        "roc_auc": 0.943,
+        "cv_roc_auc": 0.9583,
+        "composite_score": 0.8915
+      },
+      "best_params": {
+        "estimators": [
+          "Random Forest",
+          "Gradient Boosting",
+          "XGBoost",
+          "SVM"
+        ],
+        "voting": "soft"
+      },
+      "confusion_matrix": {
+        "tn": 90,
+        "fp": 10,
+        "fn": 8,
+        "tp": 46
+      },
+      "feature_importance": {
+        "Pregnancies": 0.02000178999860851,
+        "Glucose": 0.04486844662684913,
+        "BloodPressure": 0.029002958054949412,
+        "SkinThickness": 0.08997282846055156,
+        "Insulin": 0.2854809778646387,
+        "BMI": 0.03845875823212834,
+        "DiabetesPedigreeFunction": 0.03415217225970204,
+        "Age": 0.03955716873709468,
+        "Glucose_Risk": 0.005605077394686772,
+        "Glucose_High_Borderline": 0.007799348782329435,
+        "BMI_Obese": 0.0049348448644511295,
+        "Age_Risk": 0.006940839361439208,
+        "Insulin_Glucose_Ratio": 0.07696716064704305,
+        "Glucose_BMI": 0.07733271782239715,
+        "Pedigree_Age": 0.040935213301150006,
+        "HOMA_IR": 0.1979896975919809
+      }
+    }
+  }
+}
