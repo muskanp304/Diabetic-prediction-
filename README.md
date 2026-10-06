@@ -1,11 +1,5 @@
 # 🩺 Pima Diabetes Clinical Risk Predictor & Personalized Care Advisory
 
-[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
-[![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io)
-[![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org)
-[![XGBoost](https://img.shields.io/badge/XGBoost-15B064?style=for-the-badge&logo=xgboost&logoColor=white)](https://xgboost.ai)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
-
 An end-to-end clinical machine learning solution designed to assess patient diabetes risk, mitigate class imbalance with anti-leakage resampling, benchmark 9 supervised classification algorithms, and provide personalized post-prediction medical next steps and dietary meal plans.
 
 ---
