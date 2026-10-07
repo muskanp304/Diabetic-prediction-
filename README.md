@@ -1,4 +1,4 @@
-# 🩺 Pima Diabetes Clinical Risk Predictor & Personalized Care Advisory
+# Diabetes Risk Predictor & Personalized Care Advisory
 
 An end-to-end clinical machine learning solution designed to assess patient diabetes risk, mitigate class imbalance with anti-leakage resampling, benchmark 9 supervised classification algorithms, and provide personalized post-prediction medical next steps and dietary meal plans.
 
